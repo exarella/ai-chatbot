@@ -77,3 +77,13 @@ export const artifactModel = new MockLanguageModelV1({
     rawCall: { rawPrompt: null, rawSettings: {} },
   }),
 });
+
+// OpenAI Standard Models (using chat model as base)
+export const gpt4oModel = chatModel;
+export const gpt4oMiniModel = chatModel;
+
+// OpenAI Reasoning Models (using reasoning model as base)
+export const o1Model = reasoningModel;
+export const o1PreviewModel = reasoningModel;
+export const o1MiniModel = reasoningModel;
+export const o3MiniModel = reasoningModel;

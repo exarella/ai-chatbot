@@ -38,6 +38,16 @@
 
 This template ships with [xAI](https://x.ai) `grok-2-1212` as the default chat model. However, with the [AI SDK](https://sdk.vercel.ai/docs), you can switch LLM providers to [OpenAI](https://openai.com), [Anthropic](https://anthropic.com), [Cohere](https://cohere.com/), and [many more](https://sdk.vercel.ai/providers/ai-sdk-providers) with just a few lines of code.
 
+### OpenAI Reasoning Models
+
+This template now includes full support for OpenAI's advanced reasoning models:
+- **o1**: Advanced reasoning for complex problems
+- **o1-mini**: Faster reasoning for coding and math tasks  
+- **o3-mini**: Latest reasoning model with enhanced STEM capabilities
+- **GPT-4o/4o-mini**: Standard models for general conversations
+
+The reasoning models excel at complex problem-solving, mathematical analysis, and multi-step logical reasoning. See the [OpenAI Reasoning Models Guide](lib/ai/README-openai-reasoning.md) for detailed usage instructions.
+
 ## Deploy Your Own
 
 You can deploy your own version of the Next.js AI Chatbot to Vercel with one click:
