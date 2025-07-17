@@ -3,6 +3,7 @@ import {
   extractReasoningMiddleware,
   wrapLanguageModel,
 } from 'ai';
+import { anthropic } from '@ai-sdk/anthropic';
 import { xai } from '@ai-sdk/xai';
 import { isTestEnvironment } from '../constants';
 import {
@@ -30,6 +31,9 @@ export const myProvider = isTestEnvironment
         }),
         'title-model': xai('grok-2-1212'),
         'artifact-model': xai('grok-2-1212'),
+        'claude-3-5-sonnet': anthropic('claude-3-5-sonnet-20241022'),
+        'claude-3-5-haiku': anthropic('claude-3-5-haiku-20241022'),
+        'claude-3-opus': anthropic('claude-3-opus-20240229'),
       },
       imageModels: {
         'small-model': xai.image('grok-2-image'),
